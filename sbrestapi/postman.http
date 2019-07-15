@@ -1,0 +1,27 @@
+GET http://localhost:8080/api/products HTTP/1.1
+
+###
+GET http://localhost:8080/api/products/1 HTTP/1.1
+
+###
+POST http://localhost:8080/api/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Jack Denials",
+    "description": "Jack Denials live today dream tomorrow",
+    "price": "15000"
+}
+
+###
+PUT http://localhost:8080/api/products/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "5000 Pipers",
+    "description": "5000 Pipers live today dream tomorrow",
+    "price": "5000"
+}
+
+###
+DELETE http://localhost:8080/api/products/1 HTTP/1.1
